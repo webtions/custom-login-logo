@@ -3,9 +3,9 @@ Contributors: hchouhan, dreamsonline, dreamsmedia
 Donate link: http://www.dreamsonline.net
 Tags: customize, login, login screen, logo, custom logo
 Requires at least: 3.5
-Tested up to: 3.5.2
-Stable tag: 1.0
-Last Updated: 2013-May-26
+Tested up to: 3.8
+Stable tag: 1.0.1
+Last Updated: 2013-DEC-15
 Plugin Name: Custom Login Logo
 Plugin URI: http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/
 Author: Harish Chouhan
@@ -51,6 +51,9 @@ You can also visit the [support center](http://www.dreamsonline.net/wordpress-pl
 
 
 == Changelog ==
+
+= 1.0.1
+* Fixed auto width issue by adding width property.
 
 = 1.0.0
 * This is the first version
