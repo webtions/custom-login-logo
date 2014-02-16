@@ -3,7 +3,7 @@
  * Plugin Name: Custom Login Logo
  * Plugin URI: http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/
  * Description: Helps customize WordPress for your clients by hiding non essential wp-admin components and by adding support for custom login logo and favicon for website and admin pages.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Dreams Online Themes
  * Author URI: http://www.dreamsonline.net/wordpress-themes/
  * Author Email: hello@dreamsmedia.in
@@ -115,7 +115,7 @@ if ( ! class_exists( 'DOT_CLL' ) ) {
    				wp_enqueue_script( 'thickbox' );
     			wp_enqueue_script( 'media-upload' );
 
-		        wp_register_script('dot_cll_admin', WP_PLUGIN_URL.'/custom-login-logo/js/dot_cll_admin.js', array( 'thickbox', 'media-upload' ));
+		        wp_register_script('dot_cll_admin', plugins_url( '/js/dot_cll_admin.js' , __FILE__ ), array( 'thickbox', 'media-upload' ));
 		        wp_enqueue_script('dot_cll_admin');
 		    }
 		} //dot_cll_assets
