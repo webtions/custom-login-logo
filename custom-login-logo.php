@@ -1,36 +1,32 @@
 <?php
 /*
- * Plugin Name: Custom Login Logo
- * Plugin URI: http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/
- * Description: Helps customize WordPress for your clients by hiding non essential wp-admin components and by adding support for custom login logo and favicon for website and admin pages.
- * Version: 1.0.2
- * Author: Dreams Online Themes
- * Author URI: http://www.dreamsonline.net/wordpress-themes/
- * Author Email: hello@dreamsmedia.in
- *
- * @package WordPress
- * @subpackage DOT_CLL
- * @author Harish
- * @since 1.0
- *
- * License:
+Plugin Name: Custom Login Logo
+Plugin URI: https://themeist.com/#utm_source=wp-plugin&utm_medium=mailchimp-for-wp&utm_campaign=plugins-page
+Description: Customize WordPress login page by adding a custom logo to the WordPress login page.
+Version: 1.0.2
+Author: themeist
+Author URI: https://themeist.com/
+Text Domain: custom-login-logo
+Domain Path: /languages
+License: GPL v3
 
-  Copyright 2013 "Custom Login Logo WordPress Plugin" (hello@dreamsmedia.in)
+Custom Login Logo
+Copyright (C) 2013-2018, Harish Chouhan, hello@dreamsmedia.in
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License, version 2, as
-  published by the Free Software Foundation.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'DOT_CLL' ) ) {
 
