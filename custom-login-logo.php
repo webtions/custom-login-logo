@@ -35,10 +35,10 @@ if ( ! defined( 'WPINC' ) ) {
 // Design plugin version
 define( 'THEMIST_CLL_VERSION', '1.0.2' );
 
-if ( ! class_exists( 'DOT_CLL' ) ) {
+if ( ! class_exists( 'THEMIST_CLL' ) ) {
 
 
-	class DOT_CLL {
+	class THEMIST_CLL {
 
 		/*--------------------------------------------*
 		 * Constructor
@@ -236,7 +236,7 @@ if ( ! class_exists( 'DOT_CLL' ) ) {
 
 
 	// Initiation call of plugin
-	$dot_cll = new DOT_CLL(__FILE__);
+	$themeist_cll = new THEMIST_CLL(__FILE__);
 
 }
 
