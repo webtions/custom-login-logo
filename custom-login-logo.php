@@ -115,7 +115,7 @@ if ( ! class_exists( 'DOT_CLL' ) ) {
    				wp_enqueue_script( 'thickbox' );
     			wp_enqueue_script( 'media-upload' );
 
-		        wp_register_script('dot_cll_admin', plugins_url( '/js/dot_cll_admin.js' , __FILE__ ), array( 'thickbox', 'media-upload' ));
+		        wp_register_script('dot_cll_admin', plugins_url( '/admin/js/dot_cll_admin.js' , __FILE__ ), array( 'thickbox', 'media-upload' ));
 		        wp_enqueue_script('dot_cll_admin');
 		    }
 		} //dot_cll_assets
