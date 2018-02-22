@@ -32,6 +32,9 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// Design plugin version
+define( 'THEMIST_CLL_VERSION', '1.0.2' );
+
 if ( ! class_exists( 'DOT_CLL' ) ) {
 
 
