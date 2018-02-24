@@ -17,6 +17,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+define( 'THEMEIST_CLL_VERSION', '1.1.0' );
+
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-custom-login-logo.php';
 
 function run_themeist_custom_login_logo() {

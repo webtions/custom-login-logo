@@ -10,10 +10,16 @@ class Themeist_CustomLoginLogo {
 
 	public function __construct() {
 
+
+		if ( defined( 'THEMEIST_CLL_VERSION' ) ) {
+			$this->version = THEMEIST_CLL_VERSION;
+		} else {
+			$this->version = '1.0.0';
+		}
 		$this->plugin_slug = 'custom-login-logo';
-		$this->version = '1.1.0';
 
 		$this->load_dependencies();
+		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 
@@ -21,12 +27,18 @@ class Themeist_CustomLoginLogo {
 
 	private function load_dependencies() {
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-custom-login-logo-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-custom-login-logo-i18n.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-custom-login-logo-admin.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-custom-login-logo-public.php';
 
-		require_once plugin_dir_path( __FILE__ ) . 'class-custom-login-logo-loader.php';
 		$this->loader = new Themeist_CustomLoginLogo_Loader();
 
+	}
+
+	private function set_locale() {
+		$plugin_i18n = new Themeist_CustomLoginLogo_i18n();
+		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 	}
 
 	private function define_admin_hooks() {
