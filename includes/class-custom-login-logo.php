@@ -43,9 +43,9 @@ class Themeist_CustomLoginLogo {
 	private function define_public_hooks() {
 
 		$public = new Themeist_CustomLoginLogo_Public( $this->get_version() );
+		$this->loader->add_action( 'login_head', $public, 'display_login_logo' );
 		$this->loader->add_filter( 'login_headertitle', $public, 'login_logo_title' );
 		$this->loader->add_filter( 'login_headerurl', $public, 'login_logo_url' );
-
 
 	}
 

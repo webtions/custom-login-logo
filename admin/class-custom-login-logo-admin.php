@@ -48,20 +48,20 @@ class Themeist_CustomLoginLogo_Admin {
 		register_setting(
 			'themeist_cll_settings',
 			'themeist_cll_settings',
-			array( &$this, 'settings_validate' )
+			array( $this, 'settings_validate' )
 		);
 
 		add_settings_section(
 			'login_logo',
 			__( 'Logo Settings', 'themeist_cll_settings' ),
-			array( &$this, 'section_login_logo' ),
+			array( $this, 'section_login_logo' ),
 			'themeist_cll_settings'
 		);
 
 		add_settings_field(
 			'login_logo_url',
 			__( 'Upload Login Logo', 'themeist_cll_settings' ),
-			array( &$this, 'section_login_logo_url' ),
+			array( $this, 'section_login_logo_url' ),
 			'themeist_cll_settings',
 			'login_logo'
 		);
@@ -69,7 +69,7 @@ class Themeist_CustomLoginLogo_Admin {
 		add_settings_field(
 			'login_logo_height',
 			__( 'Set Logo Height', 'themeist_cll_settings' ),
-			array( &$this, 'section_login_logo_height' ),
+			array( $this, 'section_login_logo_height' ),
 			'themeist_cll_settings',
 			'login_logo'
 		);
@@ -80,14 +80,41 @@ class Themeist_CustomLoginLogo_Admin {
 	}
 
 	public function section_login_logo_url() {
-		require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_url.php';
+		printf(
+			'<span class="upload">
+				<input type="text" id="themeist_cll_settings[login_logo_url]" class="regular-text text-upload" name="themeist_cll_settings[login_logo_url]" value="%s"/>
+				<input type="button" class="button button-upload" value="Upload an image"/></br>
+				<img style="max-width: 300px; display: block;" src="" class="preview-upload" />
+			</span>',
+			isset( $this->options['login_logo_url'] ) ? esc_url( $this->options['login_logo_url']) : ''
+
+		);
+		//require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_url.php';
 	}
 
 	public function section_login_logo_height() {
-		require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_height.php';
+
+		printf(
+			'<input type="text" id="login_logo_height" name="themeist_cll_settings[login_logo_height]" value="%s" /> px',
+			isset( $this->options['login_logo_height'] ) ? esc_attr( $this->options['login_logo_height']) : ''
+		);
+		//require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_height.php';
+
+	}
+
+	public function settings_validate($input) {
+		$new_input = array();
+		if( isset( $input['login_logo_height'] ) )
+			$new_input['login_logo_height'] = absint( $input['login_logo_height'] );
+
+		if( isset( $input['login_logo_url'] ) )
+			$new_input['login_logo_url'] = sanitize_text_field( $input['login_logo_url'] );
+
+		return $new_input;
 	}
 
 	public function render_options_page() {
+		$this->options = get_option( 'themeist_cll_settings' );
 		require_once plugin_dir_path( __FILE__ ) . 'partials/custom-login-logo-admin-display.php';
 	}
 
