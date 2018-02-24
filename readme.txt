@@ -1,17 +1,14 @@
+
 === Custom Login Logo ===
-Contributors: hchouhan, dreamsonline, dreamsmedia
-Donate link: http://www.dreamsonline.net
-Tags: customize, login, login screen, logo, custom logo
+Contributors: hchouhan, themeist
+Donate link: https://themeist.com
+Tags: customize, login, login screen, logo, custom logo, themeist
+Requires at least: 4.1
+Tested up to: 4.9.4
 Stable tag: 1.0.2
-Requires at least: 3.5
-Tested up to: 3.8.1
-Last Updated: 2014-FEB-17
-Plugin Name: Custom Login Logo
-Plugin URI: http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/
-Author: Harish Chouhan
-Author URI: http://www.dreamsonline.net/wordpress-themes/
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Requires PHP: 5.2.4
 
 Custom Login Logo lets you to add a custom logo in your wordpress login page instead of the usual wordpress logo using built-in media uploader.
 
@@ -21,14 +18,10 @@ Custom Login Logo lets you to add a custom logo in your wordpress login page ins
 You no longer need to copy paste logo path or manually upload logo through FTP. Simply activate the plugin and visit the setting page to use built-in media manager to upload and set a login logo and customize your login page.
 
 
-Please report any bugs you find via http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/
-
-
-
 = My Links =
 
-* Twitter @[harishchouhan](https://twitter.com/dreams_media)
-* Google+ [Harish Chouhan](https://plus.google.com/u/0/103138475844539274387/)
+* Twitter @[harishchouhan](https://twitter.com/harishchouhan)
+* Website [Themeist.com](http://themeist.com/)
 
 
 If you love the plugin, please consider rating it and clicking on "it works" button.
@@ -44,9 +37,9 @@ If you love the plugin, please consider rating it and clicking on "it works" but
 
 == Frequently Asked Questions ==
 
-Take a look at the [official "Custom Login Logo" FAQ](http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/).
+Take a look at the [official "Custom Login Logo" FAQ](https://themeist.com/plugins/wordpress/custom-login-logo/).
 
-You can also visit the [support center](http://www.dreamsonline.net/wordpress-plugins/custom-login-logo/) and start a discussion if needed.
+You can also visit the [support center](https://wordpress.org/support/plugin/custom-login-logo) and start a discussion if needed.
 
 
 
