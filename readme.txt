@@ -8,7 +8,7 @@ Tested up to: 4.9.4
 Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Requires PHP: 5.2.4
+Requires PHP: 7.1.12
 
 Custom Login Logo lets you to add a custom logo in your wordpress login page instead of the usual wordpress logo using built-in media uploader.
 
