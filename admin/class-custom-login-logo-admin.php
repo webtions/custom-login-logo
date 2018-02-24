@@ -9,8 +9,8 @@ class Themeist_CustomLoginLogo_Admin {
 	}
 
 	public function admin_menu() {
-		$page_title = __('Custom Login Logo');
-		$menu_title = __('Custom Login Logo');
+		$page_title = __('Custom Login Logo', 'plugin-slug');
+		$menu_title = __('Custom Login Logo', 'plugin-slug');
 		$capability = 'manage_options';
 		$menu_slug = 'themeist_cll';
 		$function =  array( $this, 'render_options_page');
@@ -53,14 +53,14 @@ class Themeist_CustomLoginLogo_Admin {
 
 		add_settings_section(
 			'login_logo',
-			__( 'Logo Settings', 'themeist_cll_settings' ),
+			__( 'Logo Settings', 'plugin-slug' ),
 			array( $this, 'section_login_logo' ),
 			'themeist_cll_settings'
 		);
 
 		add_settings_field(
 			'login_logo_url',
-			__( 'Upload Login Logo', 'themeist_cll_settings' ),
+			__( 'Upload Login Logo', 'plugin-slug' ),
 			array( $this, 'section_login_logo_url' ),
 			'themeist_cll_settings',
 			'login_logo'
@@ -68,7 +68,7 @@ class Themeist_CustomLoginLogo_Admin {
 
 		add_settings_field(
 			'login_logo_height',
-			__( 'Set Logo Height', 'themeist_cll_settings' ),
+			__( 'Set Logo Height', 'plugin-slug' ),
 			array( $this, 'section_login_logo_height' ),
 			'themeist_cll_settings',
 			'login_logo'
@@ -83,7 +83,7 @@ class Themeist_CustomLoginLogo_Admin {
 		printf(
 			'<span class="upload">
 				<input type="text" id="themeist_cll_settings[login_logo_url]" class="regular-text text-upload" name="themeist_cll_settings[login_logo_url]" value="%s"/>
-				<input type="button" class="button button-upload" value="Upload an image"/></br>
+				<input type="button" class="button button-upload" value="' . __( 'Upload an image', 'plugin-slug' ) . '"/></br>
 				<img style="max-width: 300px; display: block;" src="" class="preview-upload" />
 			</span>',
 			isset( $this->options['login_logo_url'] ) ? esc_url( $this->options['login_logo_url']) : ''
