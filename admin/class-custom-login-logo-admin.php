@@ -76,7 +76,7 @@ class Themeist_CustomLoginLogo_Admin {
 	}
 
 	public function section_login_logo() {
-		require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo.php';
+
 	}
 
 	public function section_login_logo_url() {
@@ -89,7 +89,6 @@ class Themeist_CustomLoginLogo_Admin {
 			isset( $this->options['login_logo_url'] ) ? esc_url( $this->options['login_logo_url']) : ''
 
 		);
-		//require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_url.php';
 	}
 
 	public function section_login_logo_height() {
@@ -98,7 +97,6 @@ class Themeist_CustomLoginLogo_Admin {
 			'<input type="text" id="login_logo_height" name="themeist_cll_settings[login_logo_height]" value="%s" /> px',
 			isset( $this->options['login_logo_height'] ) ? esc_attr( $this->options['login_logo_height']) : ''
 		);
-		//require_once plugin_dir_path( __FILE__ ) . 'partials/section_login_logo_height.php';
 
 	}
 
