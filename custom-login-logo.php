@@ -16,3 +16,14 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-custom-login-logo.php';
+
+function run_themeist_custom_login_logo() {
+
+	$spmm = new Themeist_CustomLoginLogo();
+	$spmm->run();
+
+}
+
+run_themeist_custom_login_logo();
