@@ -1,3 +1,6 @@
+= 1.1.0
+* Recoded the entire plugin
+
 = 1.0.2
 * Changed WP_PLUGIN_URL to plugins_url()
 

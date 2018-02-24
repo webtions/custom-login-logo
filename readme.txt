@@ -5,7 +5,7 @@ Donate link: https://themeist.com
 Tags: customize, login, login screen, logo, custom logo, themeist
 Requires at least: 4.1
 Tested up to: 4.9.4
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 7.1.12
@@ -44,6 +44,9 @@ You can also visit the [support center](https://wordpress.org/support/plugin/cus
 
 
 == Changelog ==
+
+= 1.1.0
+* Recoded the entire plugin
 
 = 1.0.2
 * Changed WP_PLUGIN_URL to plugins_url()
