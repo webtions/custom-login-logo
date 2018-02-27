@@ -48,7 +48,6 @@ class Themeist_CustomLoginLogo {
 		$this->loader->add_action( 'admin_init', $admin, 'themeist_cll_settings' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $admin, 'enqueue_styles' );
-		$this->loader->add_action( 'add_meta_boxes', $admin, 'add_meta_box' );
 
 	}
 
