@@ -1,3 +1,11 @@
+#### 1.1.1 - February 28, 2018
+
+**Fixes**
+
+- Error caused post edit screen
+
+#### Previous
+
 = 1.1.0
 * Recoded the entire plugin
 
