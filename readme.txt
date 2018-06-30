@@ -5,7 +5,7 @@ Donate link: https://themeist.com
 Tags: customize, login, login screen, logo, custom logo, themeist
 Requires at least: 4.1
 Tested up to: 4.9.4
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires PHP: 7.1.12
@@ -45,13 +45,16 @@ You can also visit the [support center](https://wordpress.org/support/plugin/cus
 
 == Changelog ==
 
-#### 1.1.1 - February 28, 2018
+#### 1.1.2 - June 30, 2018
 
-**Fixes**
+**Added**
 
-- Error caused post edit screen
+- Added max-width details below upload field
 
 #### Previous
+
+= 1.1.1
+* FIX: Removed a line accidentally added from OOP tutorial causing call_user_func_array error.
 
 = 1.1.0
 * Recoded the entire plugin
