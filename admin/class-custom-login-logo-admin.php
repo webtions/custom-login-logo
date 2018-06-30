@@ -85,7 +85,7 @@ class Themeist_CustomLoginLogo_Admin {
 				<input type="text" id="themeist_cll_settings[login_logo_url]" class="regular-text text-upload" name="themeist_cll_settings[login_logo_url]" value="%s"/>
 				<input type="button" class="button button-upload" value="' . __( 'Upload an image', 'plugin-slug' ) . '"/></br>
 				<img style="max-width: 300px; display: block;" src="" class="preview-upload" />
-			</span>',
+			</span><p class="description" id="themeist_cll_settings[login_logo_url]-description">Maximum width should be 320 pixels or part of the logo will be hidden.</p>',
 			isset( $this->options['login_logo_url'] ) ? esc_url( $this->options['login_logo_url']) : ''
 
 		);
