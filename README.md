@@ -1,33 +1,35 @@
-# Custom Branding for WooCommerce
+# Custom Login Logo
 
-> Replace the **WooCommerce** admin menu name and icon with your own — simple, clean, and perfect for client sites.
+> Easily add a custom logo to your WordPress login page using the built-in media uploader — no coding or FTP needed.
 
-Ideal for freelancers and agencies who want to deliver a white-labeled experience in the WordPress admin.
+Ideal for freelancers, agencies, or anyone looking to personalise the WordPress login experience.
 
-If you find this plugin helpful, please consider [leaving a review](https://wordpress.org/support/plugin/woocommerce-branding/reviews/?rate=5#new-post) — it supports future updates and helps others find the plugin.
+If this plugin helps you, please consider [leaving a 5-star review](https://wordpress.org/support/plugin/custom-login-logo/reviews/?rate=5#new-post) — it supports future updates and helps others discover the plugin.
 
 ---
 
 ## Features
 
-- Change WooCommerce admin menu name
-- Replace the menu icon with any Dashicon or SVG
-- No bloat – just one clean settings screen
-- No frontend impact
-- Fully compliant with WordPress Coding Standards
+- Upload a custom login logo using the media uploader
+- No coding or FTP required
+- Works with most WordPress themes
+- Retina/high–DPI image compatible
+- Lightweight and fast — no bloat
+- One clean settings screen in the admin
+- Follows WordPress Coding Standards
 
 ---
 
 ## Security
 
-If you discover a security vulnerability in this plugin, please report it privately to `mail@webtions.com` so it can be addressed responsibly.
+If you discover a security issue, please report it responsibly to `mail@webtions.com`.
 
 ---
 
 ## License
 
 GPL-3.0
-See [license details here](http://www.gnu.org/licenses/gpl-3.0.txt)
+See [license details here](https://www.gnu.org/licenses/gpl-3.0.txt)
 
 ---
 
@@ -39,26 +41,26 @@ See [license details here](http://www.gnu.org/licenses/gpl-3.0.txt)
 ### Clone and Install
 
 ```bash
-git clone https://github.com/webtions/woocommerce-branding.git
-cd woocommerce-branding
+git clone https://github.com/webtions/custom-login-logo.git
+cd custom-login-logo
 composer install
 ```
 
 ### Useful Commands
 
-Check for coding standard violations:
+**Check for coding standard violations:**
 
 ```bash
 composer standards:check
 ```
 
-Fix fixable code style issues:
+**Fix fixable code style issues:**
 
 ```bash
 composer standards:fix
 ```
 
-Run static analysis:
+**Run static analysis:**
 
 ```bash
 composer analyze
@@ -74,19 +76,34 @@ composer analyze
 <details>
 <summary><strong>View changelog</strong></summary>
 
-### 1.1.0 - (28 July 2025)
-- Removed `wp_enqueue_media()` and custom JavaScript for cleaner settings page
-- Added visibility declarations to all class methods
-- Escaped all translatable and dynamic output using `esc_html__()`, `esc_attr()`, and `esc_url()`
-- Used strict comparison (`true`) in `in_array()` checks
-- Sanitized and unslashed `$_GET['page']` in settings asset loader
-- Added full docblocks to all public methods for better developer clarity
-- Cleaned up code formatting and ensured PHPCS compliance
+### 1.2.0 - (29 July 2025)
+- Simplified: Removed unnecessary class instantiation and OOP overhead
+- Updated: Refactored and modernized code structure
+- Updated: Moved JavaScript to assets/js folder and renamed for clarity
+- Fixed: Replaced deprecated hook `login_headertitle` with `login_headertext`
+- Fixed: Escaping and PHPCS compliance issues across the plugin
+- Improved: File and class naming to follow WordPress standards
+- Removed: Old/unused files, comments, and legacy patterns
 
-### 1.0.1
-- Minor internal code improvements and documentation updates
+### 1.1.2 - (30 June 2018)
+- Added: max-width details below upload field
 
-### 1.0.0
-- Initial release
+### 1.1.2 - (27 February 2018)
+- Fixed issue on post screen & updated tag
+
+### 1.1.1 - (24 February 2018)
+- FIX: Removed a line accidentally added from OOP tutorial causing call_user_func_array error.
+
+### 1.1.0 - (24 February 2018)
+- Recoded the entire plugin
+
+### 1.0.2 - (16 February 2014)
+- Changed WP_PLUGIN_URL to plugins_url()
+
+### 1.0.1 - (14 December 2013)
+- Fixed auto width issue by adding width property.
+
+### 1.0.0 - (26 May 2013)
+- This is the first version
 
 </details>

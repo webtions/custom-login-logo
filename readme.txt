@@ -1,10 +1,10 @@
-=== Custom Login Logo – Easily Add a Logo to Your WordPress Login Page ===
+=== Custom Login Logo - Easily Add a Logo to Your WordPress Login Page ===
 Contributors: themeist, hchouhan
 Donate link: https://themeist.com/plugins/wordpress/custom-login-logo/
 Tags: login-logo, login screen, custom login, custom logo, WordPress login
 Requires at least: 6.0
 Tested up to: 6.8
-Stable tag: 1.1.2
+Stable tag: 1.2.0
 Requires PHP: 7.4
 License: GPL-3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
@@ -43,6 +43,15 @@ You can visit the [support forum](https://wordpress.org/support/plugin/custom-lo
 
 
 == Changelog ==
+
+= 1.2.0 - (29 July 2025) =
+* Simplified: Removed unnecessary class instantiation and OOP overhead
+* Updated: Refactored and modernized code structure
+* Updated: Moved JavaScript to assets/js folder and renamed for clarity
+* Fixed: Replaced deprecated hook `login_headertitle` with `login_headertext`
+* Fixed: Escaping and PHPCS compliance issues across the plugin
+* Improved: File and class naming to follow WordPress standards
+* Removed: Old/unused files, comments, and legacy patterns
 
 = 1.1.2 - (30 June 2018) =
 * Added: max-width details below upload field
