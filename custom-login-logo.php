@@ -22,15 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'THEMEIST_CLL_VERSION', '1.1.2' );
 
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-custom-login-logo.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-themeist-customloginlogo.php';
 
-/**
- * Begins execution of the plugin.
- *
- * @return void
- */
-function run_themeist_custom_login_logo() {
-	$plugin = new Themeist_CustomLoginLogo();
-	$plugin->run();
-}
-run_themeist_custom_login_logo();
+new Themeist_CustomLoginLogo();
