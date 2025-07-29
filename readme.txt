@@ -1,69 +1,66 @@
-
-=== Custom Login Logo ===
-Contributors: hchouhan, themeist
-Donate link: https://themeist.com
-Tags: customize, login, login screen, logo, custom logo, themeist
-Requires at least: 4.1
-Tested up to: 4.9.4
+=== Custom Login Logo – Easily Add a Logo to Your WordPress Login Page ===
+Contributors: themeist, hchouhan
+Donate link: https://themeist.com/plugins/wordpress/custom-login-logo/
+Tags: login-logo, login screen, custom login, custom logo, WordPress login
+Requires at least: 6.0
+Tested up to: 6.8
 Stable tag: 1.1.2
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Requires PHP: 7.1.12
+Requires PHP: 7.4
+License: GPL-3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
-Custom Login Logo lets you to add a custom logo in your wordpress login page instead of the usual wordpress logo using built-in media uploader.
-
+Easily add a custom logo to your WordPress login page using the built-in media uploader.
 
 == Description ==
 
-You no longer need to copy paste logo path or manually upload logo through FTP. Simply activate the plugin and visit the setting page to use built-in media manager to upload and set a login logo and customize your login page.
+Custom Login Logo lets you replace the default WordPress login logo with your own — no need to touch code or upload files via FTP.
 
+Just activate the plugin and use the built-in media uploader on the settings page to upload your custom login logo. It's quick, simple, and works with most themes.
 
-= My Links =
+This plugin is perfect for branding client sites, personalising the login screen, or maintaining a consistent visual identity.
 
-* Twitter @[harishchouhan](https://twitter.com/harishchouhan)
-* Website [Themeist.com](http://themeist.com/)
+Features:
+- Upload your custom logo using the built-in WordPress media uploader
+- No need for FTP or coding
+- Works with most themes and setups
+- Retina/high-DPI image compatible
+- Lightweight and fast
 
-
-If you love the plugin, please consider rating it and clicking on "it works" button.
-
+If you find this plugin useful, please consider leaving a 5-star review on WordPress.org.
 
 == Installation ==
 
-1. Upload the directory `/custom-login-logo/` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Click on the Settings link below the plugin name on the plugins page to add your custom logo for the login screen and favicon.
-
+1. In your WordPress dashboard, go to **Plugins → Add New**.
+2. Search for **Custom Login Logo**, then click **Install Now**.
+3. After installation, click **Activate**.
+4. Go to **Settings → Custom Login Logo** to upload your logo.
 
 
 == Frequently Asked Questions ==
 
-Take a look at the [official "Custom Login Logo" FAQ](https://themeist.com/plugins/wordpress/custom-login-logo/).
-
-You can also visit the [support center](https://wordpress.org/support/plugin/custom-login-logo) and start a discussion if needed.
+You can visit the [support forum](https://wordpress.org/support/plugin/custom-login-logo) to ask a question or report an issue.
 
 
 
 == Changelog ==
 
-#### 1.1.2 - June 30, 2018
+= 1.1.2 - (30 June 2018) =
+* Added: max-width details below upload field
 
-**Added**
+= 1.1.2 - (27 February 2018) =
+* Fixed issue on post screen & updated tag
 
-- Added max-width details below upload field
-
-#### Previous
-
-= 1.1.1
+= 1.1.1 - (24 February 2018)
 * FIX: Removed a line accidentally added from OOP tutorial causing call_user_func_array error.
 
-= 1.1.0
+= 1.1.0 - (24 February 2018)
 * Recoded the entire plugin
 
-= 1.0.2
+= 1.0.2 - (16 February 2014)
 * Changed WP_PLUGIN_URL to plugins_url()
 
-= 1.0.1
+= 1.0.1 - (14 December 2013)
 * Fixed auto width issue by adding width property.
 
-= 1.0.0
+= 1.0.0 - (26 May 2013)
 * This is the first version

@@ -4,7 +4,7 @@
  * Plugin URI:        https://themeist.com/#utm_source=wp-plugin&utm_medium=custom-login-logo&utm_campaign=plugins-page
  * Description:       Add a custom logo to the WordPress login page.
  * Version:           1.1.2
- * Author:            Themeist, Harish Chouhan
+ * Author:            Themeist
  * Author URI:        https://themeist.com/
  * Author Email:      support@themeist.com
  * Text Domain:       custom-login-logo-locale
