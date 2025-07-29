@@ -1,0 +1,63 @@
+# Copyright (C) 2025 Themeist
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Login Logo 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-login-logo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-29T01:43:01+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: custom-login-logo\n"
+
+#. Plugin Name of the plugin
+#: custom-login-logo.php
+#: includes/class-themeist-customloginlogo.php:44
+#: includes/class-themeist-customloginlogo.php:45
+#: includes/class-themeist-customloginlogo.php:170
+msgid "Custom Login Logo"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: custom-login-logo.php
+msgid "https://themeist.com/plugins/wordpress/custom-login-logo/#utm_source=wp-plugin&utm_medium=custom-login-logo&utm_campaign=plugins-page"
+msgstr ""
+
+#. Description of the plugin
+#: custom-login-logo.php
+msgid "Easily add a custom logo to your WordPress login page using the built-in media uploader."
+msgstr ""
+
+#. Author of the plugin
+#: custom-login-logo.php
+msgid "Themeist"
+msgstr ""
+
+#. Author URI of the plugin
+#: custom-login-logo.php
+msgid "https://themeist.com/"
+msgstr ""
+
+#: includes/class-themeist-customloginlogo.php:66
+msgid "Logo Settings"
+msgstr ""
+
+#: includes/class-themeist-customloginlogo.php:73
+msgid "Upload Login Logo"
+msgstr ""
+
+#: includes/class-themeist-customloginlogo.php:81
+msgid "Set Logo Height"
+msgstr ""
+
+#: includes/class-themeist-customloginlogo.php:139
+msgid "Upload an image"
+msgstr ""
+
+#: includes/class-themeist-customloginlogo.php:144
+msgid "Maximum width should be 320 pixels or part of the logo may be hidden."
+msgstr ""
