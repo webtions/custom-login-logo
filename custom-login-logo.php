@@ -1,30 +1,36 @@
 <?php
-/*
+/**
  * Plugin Name:       Custom Login Logo
- * Plugin URI:        https://themeist.com/#utm_source=wp-plugin&utm_medium=custom-login-logo&utm_campaign=plugins-page
- * Description:       Add a custom logo to the WordPress login page.
+ * Plugin URI:        https://themeist.com/plugins/wordpress/custom-login-logo/#utm_source=wp-plugin&utm_medium=custom-login-logo&utm_campaign=plugins-page
+ * Description:       Easily add a custom logo to your WordPress login page using the built-in media uploader.
  * Version:           1.1.2
+ * Requires at least: 6.0
+ * Tested up to:      6.8
+ * Requires PHP:      7.4
  * Author:            Themeist
  * Author URI:        https://themeist.com/
- * Author Email:      support@themeist.com
- * Text Domain:       custom-login-logo-locale
- * License:           GPL-3.0
- * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
- * Domain Path:       /languages
+ * License:           GPL-3.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:       custom-login-logo
+ *
+ * @package Themeist_CustomLoginLogo
  */
 
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-define( 'THEMEIST_CLL_VERSION', '1.1.1' );
+define( 'THEMEIST_CLL_VERSION', '1.1.2' );
 
 require_once plugin_dir_path( __FILE__ ) . 'includes/class-custom-login-logo.php';
 
+/**
+ * Begins execution of the plugin.
+ *
+ * @return void
+ */
 function run_themeist_custom_login_logo() {
-
-	$spmm = new Themeist_CustomLoginLogo();
-	$spmm->run();
+	$plugin = new Themeist_CustomLoginLogo();
+	$plugin->run();
 }
-
 run_themeist_custom_login_logo();
