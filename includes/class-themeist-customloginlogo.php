@@ -25,7 +25,6 @@ class Themeist_CustomLoginLogo {
 	public function __construct() {
 		$this->version = defined( 'THEMEIST_CLL_VERSION' ) ? THEMEIST_CLL_VERSION : '1.0.0';
 
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_assets' ) );
@@ -33,19 +32,6 @@ class Themeist_CustomLoginLogo {
 		add_action( 'login_head', array( $this, 'display_login_logo' ) );
 		add_filter( 'login_headertext', array( $this, 'login_logo_title' ) );
 		add_filter( 'login_headerurl', array( $this, 'login_logo_url' ) );
-	}
-
-	/**
-	 * Load plugin textdomain.
-	 *
-	 * @return void
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'custom-login-logo',
-			false,
-			dirname( plugin_basename( __DIR__ ) ) . '/languages/'
-		);
 	}
 
 	/**
