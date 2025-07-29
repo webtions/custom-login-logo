@@ -10,7 +10,6 @@ class Themeist_CustomLoginLogo {
 
 	public function __construct() {
 
-
 		if ( defined( 'THEMEIST_CLL_VERSION' ) ) {
 			$this->version = THEMEIST_CLL_VERSION;
 		} else {
@@ -22,18 +21,16 @@ class Themeist_CustomLoginLogo {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
 	}
 
 	private function load_dependencies() {
 
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-custom-login-logo-loader.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-custom-login-logo-i18n.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-custom-login-logo-admin.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-custom-login-logo-public.php';
+		require_once plugin_dir_path( __DIR__ ) . 'includes/class-custom-login-logo-loader.php';
+		require_once plugin_dir_path( __DIR__ ) . 'includes/class-custom-login-logo-i18n.php';
+		require_once plugin_dir_path( __DIR__ ) . 'admin/class-custom-login-logo-admin.php';
+		require_once plugin_dir_path( __DIR__ ) . 'public/class-custom-login-logo-public.php';
 
 		$this->loader = new Themeist_CustomLoginLogo_Loader();
-
 	}
 
 	private function set_locale() {
@@ -48,7 +45,6 @@ class Themeist_CustomLoginLogo {
 		$this->loader->add_action( 'admin_init', $admin, 'themeist_cll_settings' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $admin, 'enqueue_styles' );
-
 	}
 
 	private function define_public_hooks() {
@@ -57,7 +53,6 @@ class Themeist_CustomLoginLogo {
 		$this->loader->add_action( 'login_head', $public, 'display_login_logo' );
 		$this->loader->add_filter( 'login_headertitle', $public, 'login_logo_title' );
 		$this->loader->add_filter( 'login_headerurl', $public, 'login_logo_url' );
-
 	}
 
 	public function run() {
@@ -67,5 +62,4 @@ class Themeist_CustomLoginLogo {
 	public function get_version() {
 		return $this->version;
 	}
-
 }

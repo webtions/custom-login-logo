@@ -10,7 +10,6 @@ class Themeist_CustomLoginLogo_Loader {
 
 		$this->actions = array();
 		$this->filters = array();
-
 	}
 
 	public function add_action( $hook, $component, $callback ) {
@@ -26,11 +25,10 @@ class Themeist_CustomLoginLogo_Loader {
 		$hooks[] = array(
 			'hook'      => $hook,
 			'component' => $component,
-			'callback'  => $callback
+			'callback'  => $callback,
 		);
 
 		return $hooks;
-
 	}
 
 	public function run() {
@@ -42,7 +40,5 @@ class Themeist_CustomLoginLogo_Loader {
 		foreach ( $this->actions as $hook ) {
 			add_action( $hook['hook'], array( $hook['component'], $hook['callback'] ) );
 		}
-
 	}
-
 }
