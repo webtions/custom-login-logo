@@ -107,5 +107,3 @@ composer analyze
 - This is the first version
 
 </details>
-
-GPL-3.0-or-later. See [LICENSE.txt](LICENSE.txt).
