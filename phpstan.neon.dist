@@ -13,7 +13,6 @@ parameters:
         - node_modules
         - build
         - assets
-        - styles
 
     reportUnmatchedIgnoredErrors: false
 

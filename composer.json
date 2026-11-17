@@ -1,9 +1,9 @@
 {
-	"name": "webtions/plugin-info",
+	"name": "webtions/custom-login-logo",
 	"type": "wordpress-plugin",
-	"description": "Developer-focused plugin to fetch and display information from the WordPress.org Plugin API.",
-	"keywords": ["WordPress", "plugin", "API", "plugin info"],
-	"homepage": "https://github.com/themeist/plugin-info",
+	"description": "Easily add a custom logo to your WordPress login page using the built-in media uploader.",
+	"keywords": ["WordPress", "plugin", "login", "logo"],
+	"homepage": "https://github.com/webtions/custom-login-logo",
 	"license": "GPL-3.0-or-later",
 	"require": {
 		"php": ">=7.4"
