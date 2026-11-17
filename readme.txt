@@ -3,9 +3,9 @@ Contributors: themeist, hchouhan
 Donate link: https://themeist.com/plugins/wordpress/custom-login-logo/
 Tags: login-logo, login screen, custom login, custom logo, WordPress login
 Requires at least: 6.0
-Tested up to: 7.1
-Stable tag: 1.2.1
-Requires PHP: 8.2
+Tested up to: 6.8
+Stable tag: 1.2.0
+Requires PHP: 7.4
 License: GPL-3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -43,10 +43,6 @@ You can visit the [support forum](https://wordpress.org/support/plugin/custom-lo
 
 
 == Changelog ==
-
-= 1.2.1 =
-* Minimum PHP version is now 8.2.
-* Tested up to WordPress 7.1.
 
 = 1.2.0 - (29 July 2025) =
 * Simplified: Removed unnecessary class instantiation and OOP overhead
