@@ -62,8 +62,14 @@ jobs:
       - name: Preview readme changes
         run: bash .github/scripts/sync-wordpress-readme.sh readme.txt "$SVN_URL"
 
+  ci:
+    name: CI
+    if: github.event_name == 'push'
+    uses: ./.github/workflows/ci.yml
+
   publish:
     name: Publish to WordPress.org
+    needs: ci
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     concurrency:
