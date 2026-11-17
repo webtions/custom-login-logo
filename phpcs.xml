@@ -29,7 +29,7 @@
 	<rule ref="WordPress-Extra"/>
 
 	<!-- Check compatibility with the supported PHP range (keep in step with "Requires PHP"). -->
-	<config name="testVersion" value="7.4-"/>
+	<config name="testVersion" value="8.2-"/>
 	<rule ref="PHPCompatibilityWP"/>
 
 	<!-- Minimum supported WordPress version (keep in step with "Requires at least"). -->

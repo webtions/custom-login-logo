@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/webtions/custom-login-logo",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"php": ">=7.4"
+		"php": ">=8.2"
 	},
 	"require-dev": {
 		"php-parallel-lint/php-parallel-lint": "^1.3",

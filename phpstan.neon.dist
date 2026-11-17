@@ -3,7 +3,7 @@ parameters:
 
     # Supported PHP range (keep in step with "Requires PHP").
     phpVersion:
-        min: 70400
+        min: 80200
         max: 80500
 
     bootstrapFiles:
